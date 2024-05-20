@@ -1,0 +1,5 @@
+.entry-footer {
+    a {
+        @apply fixed inline-block text-white bg-black bottom-10px right-10px py-10px px-20px;
+    }
+}

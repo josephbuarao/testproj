@@ -1,0 +1,198 @@
+const _spaces = {
+  '5px': '5px',
+  '10px': '10px',
+  '15px': '15px',
+  '20px': '20px',
+  '25px': '25px',
+  '30px': '30px',
+  '35px': '35px',
+  '40px': '40px',
+  '45px': '45px',
+  '50px': '50px',
+  '55px': '55px',
+  '60px': '60px',
+  '65px': '65px',
+  '70px': '70px',
+  '75px': '75px',
+  '80px': '80px',
+  '85px': '85px',
+  '90px': '90px',
+  '95px': '95px',
+  '100px': '100px',
+  '105px': '105px',
+  '110px': '110px',
+  '115px': '115px',
+  '120px': '120px',
+  '125px': '125px',
+  '130px': '130px',
+  '135px': '135px',
+  '140px': '140px',
+  '145px': '145px',
+  '150px': '150px',
+  '155px': '155px',
+  '160px': '160px',
+  '165px': '165px',
+  '170px': '170px',
+  '175px': '175px',
+  '180px': '180px',
+  '185px': '185px',
+  '190px': '190px',
+  '195px': '195px',
+  '200px': '200px',
+  '80vh': '80vh'
+}
+
+const _percent = {
+  '5%': '5%',
+  '10%': '10%',
+  '15%': '15%',
+  '20%': '20%',
+  '25%': '25%',
+  '30%': '30%',
+  '35%': '35%',
+  '37%': '37%',
+  '40%': '40%',
+  '45%': '45%',
+  '50%': '50%',
+  '55%': '55%',
+  '60%': '60%',
+  '65%': '65%',
+  '70%': '70%',
+  '75%': '75%',
+  '80%': '80%',
+  '85%': '85%',
+  '90%': '90%',
+  '95%': '95%',
+  '100%': '100%',
+}
+
+
+module.exports = {
+  mode: 'jit',
+  important: true,
+  purge: [
+    '**/*.php',
+    '*.php',
+  ],
+  darkMode: false, // or 'media' or 'class'
+  theme: {
+    screens: {
+      xxs:'380px',
+      xs:'480px',
+      sm: '640px',
+      md: '768px',
+      lg: '1024px',
+      xl: '1280px',
+      xxl: '1440px',
+      xxxl: '1536px',
+      fhd: '1600px',
+      adminMobile: '784px',
+    },
+    colors: {
+      black: '#000',
+      white: '#fff',
+      dirtyWhite: '#F5F5FA',
+      transparent: 'transparent',
+      current: 'currentColor',
+      blue: '#27AAE1',
+      darkBlue: '#2e3a91',
+      deepBlue: '#2C3895',
+      darkGray: '#444444'
+    },
+    fontFamily: {
+      Mont: 'Montserrat, sans-serif',
+    },
+    fontSize: {
+      '70px': ['70px', { lineHeight: '100px' }],
+      '60px': ['60px', { lineHeight: '60px' }],
+      '50px': ['50px', { lineHeight: '60px' }],
+      '45px': ['45px', { lineHeight: '55px' }],
+      '40px': ['40px', { lineHeight: '50px' }],
+      '35px': ['35px', { lineHeight: '45px' }],
+      '30px': ['30px', { lineHeight: '40px' }],
+      '25px': ['25px', { lineHeight: '30px' }],
+      '24px': ['24px', { lineHeight: '34px' }],
+      '20px': ['20px', { lineHeight: '30px' }],
+      '18px': ['18px', { lineHeight: '30px' }],
+      '16px': ['16px', { lineHeight: '26px' }],
+      '14px': ['14px', { lineHeight: '20px' }],
+      '12px': ['12px', { lineHeight: '16px' }],
+      '1em': ['1em', { lineHeight: '1em' }],
+    },
+    extend: {
+      spacing: _spaces,
+      flex: {
+        full: '0 0 100%',
+        half: '0 0 48%',
+        third: '0 0 32%',
+        quarter: '0 0 23%',
+        fifth: '0 0 18%',
+        '10%': '0 0 10%',
+        '15%': '0 0 15%',
+        '20%': '0 0 20%',
+        '25%': '0 0 25%',
+        '30%': '0 0 30%',
+        '35%': '0 0 35%',
+        '37%': '0 0 37%',
+        '40%': '0 0 40%',
+        '45%': '0 0 45%',
+        '50%': '0 0 50%',
+        '55%': '0 0 55%',
+        '60%': '0 0 60%',
+        '65%': '0 0 65%',
+        '70%': '0 0 70%',
+        '75%': '0 0 75%',
+        '80%': '0 0 80%',
+        '85%': '0 0 85%',
+        '90%': '0 0 90%',
+        '95%': '0 0 95%',
+      },
+      gridTemplateColumns: {
+        // Simple 16 column grid
+        productDetails: '65% 1fr',
+        headerLayout: '35% 1fr',
+        quantityForm:'60px 1fr',
+        mobileHeader:'80% 1fr'
+      },
+      backgroundImage: {
+        'owlPrev': "url('../impremis/img/owl-prev.svg')",
+        'owlNext': "url('../impremis/img/owl-next.svg')"
+      },
+      lineHeight: {},
+      width: (theme) => ({
+        ...theme('spacing'),
+        ..._percent
+      }),
+      height: (theme) => ({
+        ...theme('spacing'),
+      }),
+      maxWidth: (theme) => ({
+        ...theme('spacing'),
+        ..._percent,
+        wrap: '1200px',
+        'max-95': '95%'
+      }),
+      maxHeight: (theme) => ({
+        ...theme('spacing'),
+      }),
+      minWidth: (theme) => ({
+        ...theme('spacing'),
+      }),
+      minHeight: (theme) => ({
+        ...theme('spacing'),
+      }),
+      borderRadius: (theme) => ({
+        ...theme('spacing'),
+      }),
+    },
+  },
+  variants: {
+    extend: {},
+  },
+  corePlugins: {
+    aspectRatio: false,
+  },
+  plugins: [
+    require('@tailwindcss/aspect-ratio'),
+  ]
+}

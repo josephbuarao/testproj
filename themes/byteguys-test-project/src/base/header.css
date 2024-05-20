@@ -1,0 +1,97 @@
+.site-header {
+    @apply relative bg-darkGray xl:sticky top-0 left-0 w-full  z-[999] py-20px;
+
+    &.header-scrolled{
+     
+    }
+
+    .wrapper{
+        @apply block md:grid md:grid-cols-headerLayout md:gap-20px;
+
+        .site-branding{
+            @apply w-[75%] md:w-full;
+            
+            img{
+                @apply max-w-[240px];
+            }
+        }
+
+        .menu-menu-1-container {
+            @apply absolute md:relative left-[-40px] block md:flex flex-wrap items-center justify-end w-[106%] h-auto md:h-full bg-darkGray;
+
+            #primary-menu{
+                @apply flex-wrap block md:flex pt-20px md:pt-0;
+
+                li{
+                    @apply border-b border-white md:border-0 px-25px py-10px;
+
+                    a{
+                        @apply font-normal text-left text-white uppercase text-16px font-Mont;
+                    }
+                }
+                
+
+
+                .menu-item-type-cart{
+
+                    .cart-contents {
+                        @apply relative inline-block;
+
+                        .cart-contents-count,
+                        .count{
+                            @apply right-[-50px] top-[-10px] absolute px-[0.75em] py-[0.5em] rounded-[50%] bg-blue text-white font-bold w-[40px] h-[40px] text-center;
+                            
+                        }
+
+                        .amount{
+                            @apply hidden;
+                        }
+                    }
+                }    
+
+            }
+        }
+
+        .menu-toggle{
+            @apply text-white font-Mont text-50px right-[65px] border-0 top-[-70px] absolute;
+        }
+
+        .main-navigation{
+            @apply absolute md:relative;
+
+            .menu-menu-1-container{
+                @apply hidden md:flex;
+            }
+
+            &.toggled{
+                .menu-menu-1-container{
+                    @apply block;
+                }
+                
+            }
+        }
+    }
+}
+
+/* .admin-bar .site-header {
+    @apply top-[42px] adminMobile:top-[32px];
+} */
+
+.header-main {
+    @apply flex flex-wrap items-center justify-between py-20px ;
+}
+
+.header-logo {
+    @apply hidden xl:block;
+    img {
+        @apply max-w-100px md:max-w-200px;
+    }
+}
+
+.header-logo-mobile{
+    @apply w-[83%] block xl:hidden;
+
+    img{
+        @apply max-w-[60%];
+    }
+}

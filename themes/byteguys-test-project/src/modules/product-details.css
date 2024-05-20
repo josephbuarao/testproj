@@ -1,0 +1,64 @@
+/* General product page styling */
+.woocommerce {
+    div.product {
+        @apply max-w-[1200px] m-0 ml-auto mr-auto p-[20px];
+
+        .product-details-wrapper{
+            @apply block md:grid md:grid-cols-productDetails md:gap-[40px] py-40px;
+        }
+
+        .product-title {
+            @apply text-35px text-darkGray mb-[10px] font-Mont font-normal;
+        }
+
+        p.price {
+            @apply mt-[15px] mb-[15px] text-blue text-20px;
+        }
+
+        div.woocommerce-product-details__short-description {
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #666;
+        }
+
+        form.cart{
+            @apply grid grid-cols-quantityForm gap-10px;
+
+            input.qty{
+                @apply w-[50px] py-10px px-10px text-center;
+            }
+            
+            .button {
+                transition: background-color 0.3s ease;
+                @apply bg-darkBlue text-white px-[20px] py-10px border-0 uppercase font-bold cursor-pointer;
+            }
+
+            .button:hover {
+                @apply bg-blue;
+            }    
+        }  
+
+        .product-description{
+            @apply font-normal font-Mont text-16px text-darkGray;
+
+            h3{
+                @apply mt-20px;
+            }
+        }
+
+        .product-gallery{
+            img{
+                @apply w-full;
+            }
+
+            .flex-control-thumbs{
+                li{
+                    @apply ml-0 w-[19.2%] mr-5px mb-5px !important;
+                }
+            }
+        }
+    
+    }    
+
+}
+

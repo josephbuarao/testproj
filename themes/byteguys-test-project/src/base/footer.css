@@ -1,0 +1,11 @@
+.site-footer{
+    @apply py-40px bg-darkBlue mt-60px;
+
+    .site-info{
+        @apply text-center text-white;
+
+        a{
+            @apply text-white
+        }
+    }
+}

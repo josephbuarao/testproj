@@ -1,0 +1,29 @@
+.btn {
+    @apply inline-block py-10px px-25px max-h-[40px] leading-[19px] text-12px;
+    transition: all .5s ease-out;
+
+    &.btn-primary {
+        @apply text-white uppercase border font-Mont rounded-5 fill-[#2C3895] border-[#26aae1];
+        background: linear-gradient(to right, #2C3895 50%, transparent 50%);
+        background-size: 200% 100%;
+        background-position: right bottom;
+
+        &:hover {
+            @apply bg-left-bottom;
+            color:#fff !important;
+        }
+    }
+
+    &.btn-secondary{
+        @apply text-white uppercase font-Mont rounded-5 text-12px leading-[19px] fill-[#fff] border-[#26aae1] border-[1px];
+        background: linear-gradient(to right, #27aae1 50%, transparent 50%);
+        background-size: 200% 100%;
+        background-position: left bottom;
+
+        &:hover{
+            @apply border-[1px] border-blue !important;
+            background-position: right bottom;
+            
+        }
+    }
+}

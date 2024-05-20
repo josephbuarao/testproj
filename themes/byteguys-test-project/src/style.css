@@ -1,0 +1,16 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@import "./base/typography.css";
+@import "./base/container.css";
+@import "./base/header.css";
+@import "./base/footer.css";
+@import "./base/content.css";
+/* @import "./base/menu.css"; */
+
+@import "./utilities/buttons.css";
+@import "./utilities/aspect-ratio.css";
+
+@import "./modules/product-details.css";
+
