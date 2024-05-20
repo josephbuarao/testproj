@@ -19,7 +19,7 @@ class TestProject {
         ?>
         <div class="wrap">
             <h2>Discount By Country Plugin Settings</h2>
-            <?php $this->implment_discount(); ?>
+            
             <form method="post" action="options.php">
                 <?php
                 settings_fields('testproj_options');
@@ -92,10 +92,12 @@ class TestProject {
         } else {
             $ipaddress = 'UNKNOWN';
         }
+
         // Handle multiple IP addresses (e.g., in HTTP_X_FORWARDED_FOR)
         if (strpos($ipaddress, ',') !== false) {
             $ipaddress = explode(',', $ipaddress)[0];
         }
+
         return $ipaddress;
     }
     

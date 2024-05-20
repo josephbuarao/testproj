@@ -1,0 +1,1 @@
+¡”Jf<?php exit; ?>a:1:{s:7:"content";s:174:"{"common.install":1716176175,"common.install_version":"2.7.2","license.status":"no_key","license.next_check":1716608175,"license.terms":"","license.community_terms":"accept"}";}
